@@ -17,9 +17,15 @@ public class ProducerTask implements Runnable {
 
     @Override
     public void run() {
-
         while(true){
-            //.....
+            synchronized(queue){ // lock
+                if(queue.size() < maxSize){ /// [1 2 3 4 5 _]
+                    System.out.println("Name of the task:" + threadName +
+                    " before adding to the queue, size"+ queue.size());
+                    
+                    queue.add(new Object());
+                } // unlock
+            }
         }
     }
     

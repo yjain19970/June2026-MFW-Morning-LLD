@@ -17,9 +17,15 @@ public class ConsumerTask implements Runnable {
 
     @Override
     public void run() {
-
         while(true){
-            ////....
+            synchronized(queue){
+                if(queue.size()>0){
+                    System.out.println("Name of the task:" + threadName + 
+                    " before remove form the queue, size"+ queue.size());
+                    
+                    queue.remove();
+                }
+        }
         }
     }
 }
