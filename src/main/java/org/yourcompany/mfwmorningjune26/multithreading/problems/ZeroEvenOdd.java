@@ -15,9 +15,9 @@ class ZeroEvenOdd {
 
     public void zero() throws InterruptedException {
         for (int i = 1; i <= n; i++) {
-            zero.acquire();
+            zero.acquire(); // take a lock here
 
-            System.out.print(0 + " ");
+            System.out.print(0 + " "); // print value
 
             if (i % 2 == 0) {
                 even.release();
