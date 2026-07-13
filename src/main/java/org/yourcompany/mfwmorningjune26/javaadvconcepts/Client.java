@@ -23,8 +23,6 @@ public class Client {
        Pair<Integer,Integer> p2 = new Pair<>();
        p2.first = 29;
        p2.second = 31;
-
-
        
 
     }
