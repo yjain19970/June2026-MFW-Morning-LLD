@@ -12,6 +12,8 @@ public class OrderProcessor {
         queue = new PriorityQueue<>();
         /**
          * 
+         * comparator = (a,b) -> a.compareTo(b);
+         * queue = new PriorityQueue<>(comparator)
          * 
          * 
          */

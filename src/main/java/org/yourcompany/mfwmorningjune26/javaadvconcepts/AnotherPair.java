@@ -5,7 +5,7 @@ public class AnotherPair<T> {
     
 
     public void doSomething(){
-        T obj = new T();
+        //T obj = new T();
     }
 
     public T getFirst() {
