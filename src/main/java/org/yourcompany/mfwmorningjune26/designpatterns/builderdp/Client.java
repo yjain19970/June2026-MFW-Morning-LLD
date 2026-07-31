@@ -22,5 +22,18 @@ public class Client {
         }
 
         System.out.println("Student: " + student);
+
+
+
+
+
+        StringBuilder sb = new StringBuilder();
+        String output = sb.append("23232")
+        .append("dksjds")
+        .append("djskndfd3434")
+        .toString();
+
+        System.out.println("output: " + output);
+
     }
 }
